@@ -49,13 +49,15 @@ AmdGenerator.prototype.app = function app() {
 
 	this.mkdir('src');
 	this.template('src/_script.php', 'src/' + this.projectName + '.php');
+	
+	this.mkdir('tests');
+	this.template('tests/_scriptTest.php', 'tests/' + this.projectName + 'Test.php');
 
 	this.mkdir('example');
 	
 	
 	this.mkdir('dist');
 	this.mkdir('doc');
-	this.mkdir('tests');
 	this.mkdir('lint');
 	this.mkdir('lint/tmp');
 	

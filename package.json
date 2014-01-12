@@ -5,7 +5,10 @@
   "keywords": [
     "yeoman-generator",
 		"php",
-		"composer"
+		"composer",
+		"phpdoc",
+		"phpunit",
+		"phplint"
   ],
   "homepage": "https://github.com/T1st3/generator-composer",
   "bugs": "https://github.com/T1st3/generator-composer/issues",

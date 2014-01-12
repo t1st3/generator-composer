@@ -19,15 +19,21 @@ module.exports = function(grunt) {
 				options: {
 					stdout: true
 				}
+			},
+			phpdoc: {
+				command: 'vendor/bin/phpdoc.php -d src/ -t doc',
+				options: {
+					stdout: true
+				}
 			}
 		},
 		phpunit: {
 			classes: {
-				dir: 'tests/php/'
+				dir: 'tests/'
 			},
 			options: {
 				bin: 'vendor/bin/phpunit',
-				bootstrap: 'tests/php/phpunit.php',
+				//bootstrap: 'tests/php/phpunit.php',
 				colors: true
 			}
 		},
@@ -58,7 +64,9 @@ module.exports = function(grunt) {
 	]);
 	
 	grunt.registerTask('build', [
-		'phplint:good'
+		'phplint:good',
+		'phpunit',
+		'shell:phpdoc'
 	]);
 	
 	grunt.registerTask('serve', [
