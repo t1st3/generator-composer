@@ -64,6 +64,7 @@ AmdGenerator.prototype.app = function app() {
 	this.template('_gruntfile.js', 'Gruntfile.js');
 	this.template('_package.json', 'package.json');
 	this.template('_composer.json', 'composer.json');
+	this.template('_README.md', 'README.md');
 	this.copy('gitignore', '.gitignore');
 	
 };
