@@ -1,7 +1,7 @@
 {
-	"name": "<%= githubAccount %>/<%= moduleName %>",
-	"version": "<%= moduleVersion %>",
-	"homepage": "https://github.com/<%= githubAccount %>/<%= moduleName %>",
+	"name": "<%= githubAccount %>/<%= projectName %>",
+	"version": "<%= projectVersion %>",
+	"homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
 	"description": "",
 	"keywords": [
 		"php"
@@ -14,14 +14,14 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/<%= githubAccount %>/<%= moduleName %>/issues",
-		"source": "https://github.com/<%= githubAccount %>/<%= moduleName %>",
+		"issues": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
+		"source": "https://github.com/<%= githubAccount %>/<%= projectName %>",
 	},
 	"license": "MIT",
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/<%= githubAccount %>/<%= moduleName %>"
+			"url": "https://github.com/<%= githubAccount %>/<%= projectName %>"
 		}
 	],
 	"type": "library",

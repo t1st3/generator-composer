@@ -40,14 +40,14 @@ module.exports = function(grunt) {
 				spawnLimit: 10,
 				swapPath: "lint/tmp"
 			},
-			good: ["lint/*-good.php"],
-			bad: ["lint/*-fail.php"]
+			good: ["src/*.php"],
+			bad: ["src/*.php"]
     }
   });
 
 	// Load tasks
 	grunt.loadNpmTasks('grunt-shell');
-	//grunt.loadNpmTasks('grunt-phpunit');
+	grunt.loadNpmTasks('grunt-phpunit');
 	grunt.loadNpmTasks('grunt-phplint');
 
 	// Register tasks
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 	]);
 	
 	grunt.registerTask('build', [
-		'phplint'
+		'phplint:good'
 	]);
 	
 	grunt.registerTask('serve', [

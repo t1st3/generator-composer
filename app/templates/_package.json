@@ -1,12 +1,12 @@
 {
-	"name": "<%= moduleName %>",
-	"version": "<%= moduleVersion %>",
+	"name": "<%= projectName %>",
+	"version": "<%= projectVersion %>",
 	"author": "<%= githubAccount %>",
-	"homepage": "https://github.com/<%= githubAccount %>/<%= moduleName %>",
-	"bugs": "https://github.com/<%= githubAccount %>/<%= moduleName %>/issues",
+	"homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
+	"bugs": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/<%= githubAccount %>/<%= moduleName %>.git"
+		"url": "git://github.com/<%= githubAccount %>/<%= projectName %>.git"
 	},
 	"engines": {
 		"node": ">= 0.10.0"

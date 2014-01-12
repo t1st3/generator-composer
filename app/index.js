@@ -33,14 +33,14 @@ AmdGenerator.prototype.askFor = function askFor() {
 		},
 		{
 			name: 'projectVersion',
-			message: 'What is the version of your AMD module?'
+			message: 'What is the version of your PHP project?'
 		}
 	];
 
 	this.prompt(prompts, function (props) {
 		this.githubAccount = props.githubAccount;
-		this.moduleName = props.moduleName;
-		this.moduleVersion = props.moduleVersion;
+		this.projectName = props.projectName;
+		this.projectVersion = props.projectVersion;
 		cb();
 	}.bind(this));
 };
@@ -48,7 +48,7 @@ AmdGenerator.prototype.askFor = function askFor() {
 AmdGenerator.prototype.app = function app() {
 
 	this.mkdir('src');
-	this.template('src/_script.php', 'src/' + this.moduleName + '.php');
+	this.template('src/_script.php', 'src/' + this.projectName + '.php');
 
 	this.mkdir('example');
 	

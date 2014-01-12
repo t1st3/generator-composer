@@ -12,7 +12,7 @@ describe('test generator', function () {
 								return done(err);
 						}
 
-						this.app = helpers.createGenerator('amd:app', [
+						this.app = helpers.createGenerator('composer:app', [
 								'../../app'
 						]);
 						done();
@@ -26,7 +26,8 @@ describe('test generator', function () {
 						'.gitignore',
 						'Gruntfile.js',
 						'composer.json',
-						'example/app.php'
+						'package.json',
+						//'example/app.php'
 				];
 
 				helpers.mockPrompt(this.app, {
