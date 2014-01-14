@@ -27,7 +27,7 @@ describe('test generator', function () {
 						'Gruntfile.js',
 						'composer.json',
 						'package.json',
-						//'example/app.php'
+						'.travis.yml'
 				];
 
 				helpers.mockPrompt(this.app, {

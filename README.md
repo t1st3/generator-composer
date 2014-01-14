@@ -11,11 +11,12 @@ About
 
 A generator for [Yeoman](http://yeoman.io).
 
-It provides a basic boilerplate for a [Composer](http://getcomposer.org), which features:
+It provides a basic boilerplate for a [Composer](http://getcomposer.org) project, which features:
 
 * automatic creation of [PhpDoc](http://phpdoc.org) documentation on build
 * a functional example
-* build with [Grunt](http://gruntjs.com)
+* buildable with [Grunt](http://gruntjs.com)
+* Ready for [Github](https://github.com) and [Travis-CI](https://travis-ci.org/)
 
 
 The proposed Grunt build for the generated Composer project has the following tasks:

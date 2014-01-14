@@ -48,13 +48,14 @@ AmdGenerator.prototype.askFor = function askFor() {
 AmdGenerator.prototype.app = function app() {
 
 	this.mkdir('src');
-	this.template('src/_script.php', 'src/' + this.projectName + '.php');
+	this.mkdir('src/' + this.githubAccount);
+	this.mkdir('src/' + this.githubAccount + '/' + this.projectName);
+	this.template('src/_script.php', 'src/' + this.githubAccount + '/' + this.projectName + '/' + this.projectName + '.php');
 	
 	this.mkdir('tests');
 	this.template('tests/_scriptTest.php', 'tests/' + this.projectName + 'Test.php');
 
 	this.mkdir('example');
-	
 	
 	this.mkdir('dist');
 	this.mkdir('doc');
@@ -66,6 +67,7 @@ AmdGenerator.prototype.app = function app() {
 	this.template('_composer.json', 'composer.json');
 	this.template('_README.md', 'README.md');
 	this.copy('gitignore', '.gitignore');
+	this.copy('travis.yml', '.travis.yml');
 	
 };
 

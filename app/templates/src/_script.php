@@ -7,7 +7,10 @@
  * 
  */
 
+namespace <%= githubAccount %>\<%= projectName %>;
+
 require(dirname(dirname(__FILE__)) . '/vendor/autoload.php');
+
 /**
  * @package <%= projectName %>
  */
@@ -19,7 +22,6 @@ class <%= projectName %> {
 	public $myParam = 0;
 
 	/**
-	 * @method increase
 	 * @name increase
 	 * @param number $n The number to add to $myParam
 	 * @since 0.1.0
@@ -30,7 +32,6 @@ class <%= projectName %> {
 	}
 
 	/**
-	 * @method negate
 	 * @name negate
 	 * @since 0.1.0
 	 */
