@@ -9,7 +9,7 @@
 
 namespace <%= githubAccount %>\<%= objectName %>;
 
-require(dirname(dirname(__FILE__)) . '/vendor/autoload.php');
+require(dirname(dirname(dirname(dirname(__FILE__)))) . '/vendor/autoload.php');
 
 /**
  * @package <%= objectName %>

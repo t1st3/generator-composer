@@ -1,6 +1,6 @@
 <?php
 require_once(dirname(dirname(__FILE__)) . '/src/<%= githubAccount %>/<%= objectName %>/<%= objectName %>.php');
-use <%= githubAccount %>/<%= objectName %>/<%= objectName %> as myClass
+use <%= githubAccount %>\<%= objectName %>\<%= objectName %> as myClass;
 
 class <%= objectName %>Test extends PHPUnit_Framework_TestCase
 {
