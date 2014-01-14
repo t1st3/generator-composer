@@ -31,26 +31,33 @@ npm install -g grunt-cli
 ```
 
 
-
-
-Build your project
---------------
-
-Once you have generated your AMD module skeleton, you can:
-
-- install once Composer, PhpDocumentor and PhpUnit locally
+Then, with Grunt, you can install Composer, PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
 
 ```
 grunt init
 ```
 
-- build the minified files, the documentation and the example with Grunt:
+
+
+
+Build your project
+--------------
+
+Once all your dependencies are installed, you can build your project with Grunt:
 
 ```
 grunt build
 ```
 
+The build process will run the following tasks:
+
+* PhpLint: runs php -l over the "src" folder
+* Runs the tests located in the "tests" folder with [PHPUnit](http://phpunit.de/)
+* Generates a [PhpDocumentor](http://phpdoc.org) documentation in the "doc" folder from the files of the "src" folder
+* Detects copy/paste of code in the files of the "src" folder with [PhpCPD](https://github.com/sebastianbergmann/phpcpd)
+
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 
 
 License

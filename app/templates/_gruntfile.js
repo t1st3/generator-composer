@@ -20,8 +20,20 @@ module.exports = function(grunt) {
 					stdout: true
 				}
 			},
+			installCopyPasteDetector: {
+				command: 'php composer.phar require "sebastian/phpcpd:2.*"',
+				options: {
+					stdout: true
+				}
+			},
 			phpdoc: {
 				command: 'vendor/bin/phpdoc.php -d src/ -t doc',
+				options: {
+					stdout: true
+				}
+			},
+			phpcpd: {
+				command: 'vendor/bin/phpcpd src/',
 				options: {
 					stdout: true
 				}
@@ -44,7 +56,7 @@ module.exports = function(grunt) {
 					"-l": null
 				},
 				spawnLimit: 10,
-				swapPath: "lint/tmp"
+				swapPath: "_lint/tmp"
 			},
 			good: ["src/*.php"],
 			bad: ["src/*.php"]
@@ -60,13 +72,15 @@ module.exports = function(grunt) {
 	grunt.registerTask('init', [
 		'shell:installComposer',
 		'shell:installPhpdoc',
-		'shell:installPhpUnit'
+		'shell:installPhpUnit',
+		'shell:installCopyPasteDetector'
 	]);
 	
 	grunt.registerTask('build', [
 		'phplint:good',
 		'phpunit',
-		'shell:phpdoc'
+		'shell:phpdoc',
+		'shell:phpcpd'
 	]);
 	
 	grunt.registerTask('serve', [

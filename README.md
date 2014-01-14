@@ -21,8 +21,9 @@ It provides a basic boilerplate for a [Composer](http://getcomposer.org), which 
 The proposed Grunt build for the generated Composer project has the following tasks:
 
 * PHPLint to review quality of code
-* PHPUnit to run tests
-* automatic creation of the documentation
+* [PHPUnit](http://phpunit.de/) to run tests
+* automatic creation of a [PhpDocumentor](http://phpdoc.org) documentation
+* Usage of [Php Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)
 
 
 Installation
@@ -46,7 +47,7 @@ npm install -g generator-composer
 
 
 
-Usage
+Usage of the generator
 -----------
 
 Once you have installed Node, NPM and Yeoman, you can initiate the generator:
@@ -64,7 +65,7 @@ Yeoman will ask you 4 questions:
 
 
 
-Build dependencies
+Build dependencies of your generated PHP project
 -----------
 
 In order to build your generated Composer project from its source, you will also need Grunt and PHP on the command line.
@@ -82,25 +83,31 @@ To install Grunt globally on the command line (and run the above build task), ru
 npm install -g grunt-cli
 ```
 
-
-
-
-Build your project
------------
-
-Once you have generated your AMD module skeleton, you can:
-
-- install once Composer, PhpDocumentor and PhpUnit locally
+Then, with Grunt, you can install Composer, PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
 
 ```
 grunt init
 ```
 
-- build the minified files, the documentation and the example with Grunt:
+
+
+Build the sources of your generated PHP project
+-----------
+
+Once all your dependencies are installed, you can build your project with Grunt:
 
 ```
 grunt build
 ```
+
+The build process will run the following tasks:
+
+* PhpLint: runs php -l over the "src" folder
+* Runs the tests located in the "tests" folder with [PHPUnit](http://phpunit.de/)
+* Generates a [PhpDocumentor](http://phpdoc.org) documentation in the "doc" folder from the files of the "src" folder
+* Detects copy/paste of code in the files of the "src" folder with [PhpCPD](https://github.com/sebastianbergmann/phpcpd)
+
+
 
 
 Credits

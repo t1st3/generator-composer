@@ -58,8 +58,8 @@ AmdGenerator.prototype.app = function app() {
 	
 	this.mkdir('dist');
 	this.mkdir('doc');
-	this.mkdir('lint');
-	this.mkdir('lint/tmp');
+	this.mkdir('_lint');
+	this.mkdir('_lint/tmp');
 	
 	this.template('_gruntfile.js', 'Gruntfile.js');
 	this.template('_package.json', 'package.json');
