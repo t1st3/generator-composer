@@ -45,6 +45,7 @@ AmdGenerator.prototype.askFor = function askFor() {
 		this.githubAccount = props.githubAccount;
 		this.projectName = props.projectName;
 		this.projectVersion = props.projectVersion;
+		this.objectName = props.objectName;
 		cb();
 	}.bind(this));
 };
