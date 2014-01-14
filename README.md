@@ -121,21 +121,8 @@ The build process will run the following tasks:
 Publish your generated project on Packagist
 --------------
 
-You must add some configuration to your generated composer.json file, in order to set up your Github repository.
+The generated PHP is ready-to-publish on Packagist. Just login on Packagist with Github, add the Packagist hooks to your Github account, and activate your package on Packagist.
 
-Edit your composer.json file, in order to add your repository information:
-
-```
-{
-	[.........],
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/githubAccount/projectName"
-		}
-	]
-}
-```
 
 
 Credits
