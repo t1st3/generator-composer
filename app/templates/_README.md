@@ -15,7 +15,7 @@ Version: <%= projectVersion %>
 Build dependencies
 --------------
 
-In order to build your generated Composer project from its source, you will also need Grunt and PHP on the command line.
+In order to build your generated Composer project from its source, you will need Grunt and PHP on the command line.
 
 So, you must install PHP5 on your system on your command line. Test it:
 
@@ -40,7 +40,7 @@ grunt init
 
 
 
-Build your project
+Build the sources
 --------------
 
 Once all your dependencies are installed, you can build your project with Grunt:
@@ -58,6 +58,20 @@ The build process will run the following tasks:
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
+
+
+
+
+Credits
+--------------
+
+<%= projectName %> was initiated with [generator-composer](https://github.com/T1st3/generator-composer), a [Yeoman](http://yeoman.io) generator that builds a PHP Composer project.
+
+This project uses the following as development dependencies:
+
+* [PHPUnit](http://phpunit.de/)
+* [PhpDocumentor](http://phpdoc.org)
+* [Php Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)
 
 
 License

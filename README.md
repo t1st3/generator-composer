@@ -25,6 +25,8 @@ The proposed Grunt build for the generated Composer project has the following ta
 * automatic creation of a [PhpDocumentor](http://phpdoc.org) documentation
 * Usage of [Php Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)
 
+The generated PHP project does not rely on any other PHP dependency than Composer and Packagist-installed packages (e.g. no PEAR dependency).
+
 
 Installation
 -----------
@@ -43,17 +45,22 @@ Finally, to install generator-composer globally from npm, run:
 npm install -g generator-composer
 ```
 
+You may also just install it locally:
+
 [![NPM](https://nodei.co/npm/generator-composer.png?compact=true)](https://nodei.co/npm/generator-composer/)
 
+```
+npm install generator-composer
+```
 
 
 Usage of the generator
 -----------
 
-Once you have installed Node, NPM and Yeoman, you can initiate the generator:
+Once you have installed Node, NPM, Yeoman and the generator itself, you can initiate the generator:
 
 ```
-yo amd
+yo composer
 ```
 
 Yeoman will ask you 4 questions:
@@ -68,7 +75,7 @@ Yeoman will ask you 4 questions:
 Build dependencies of your generated PHP project
 -----------
 
-In order to build your generated Composer project from its source, you will also need Grunt and PHP on the command line.
+In order to build your generated Composer project from its source, you will need Grunt and PHP on the command line.
 
 So, you must install PHP5 on your system on your command line. Test it:
 
@@ -108,6 +115,25 @@ The build process will run the following tasks:
 * Detects copy/paste of code in the files of the "src" folder with [PhpCPD](https://github.com/sebastianbergmann/phpcpd)
 
 
+
+Publish your generated project on Packagist
+--------------
+
+You must add some configuration to your generated composer.json file, in order to set up your Github repository.
+
+Edit your composer.json file, in order to add your repository information:
+
+```
+{
+	[.........],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/githubAccount/projectName"
+		}
+	]
+}
+```
 
 
 Credits
