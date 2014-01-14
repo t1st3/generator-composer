@@ -4,7 +4,7 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 
 
-var AmdGenerator = module.exports = function AmdGenerator(args, options, config) {
+var ComposerGenerator = module.exports = function ComposerGenerator(args, options, config) {
 	yeoman.generators.Base.apply(this, arguments);
 
 	this.on('end', function () {
@@ -14,9 +14,9 @@ var AmdGenerator = module.exports = function AmdGenerator(args, options, config)
 	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(AmdGenerator, yeoman.generators.Base);
+util.inherits(ComposerGenerator, yeoman.generators.Base);
 
-AmdGenerator.prototype.askFor = function askFor() {
+ComposerGenerator.prototype.askFor = function askFor() {
 	var cb = this.async();
 
 	// have Yeoman greet the user.
@@ -50,7 +50,7 @@ AmdGenerator.prototype.askFor = function askFor() {
 	}.bind(this));
 };
 
-AmdGenerator.prototype.app = function app() {
+ComposerGenerator.prototype.app = function app() {
 
 	this.mkdir('src');
 	this.mkdir('src/' + this.githubAccount);
@@ -73,9 +73,11 @@ AmdGenerator.prototype.app = function app() {
 	this.template('_README.md', 'README.md');
 	this.copy('gitignore', '.gitignore');
 	this.copy('travis.yml', '.travis.yml');
+	this.template('_travis-ci.xml', 'travis-ci.xml');
+	this.template('_phpunit.xml', 'phpunit.xml');
 	
 };
 
-AmdGenerator.prototype.projectfiles = function projectfiles() {
+ComposerGenerator.prototype.projectfiles = function projectfiles() {
 	this.copy('editorconfig', '.editorconfig');
 };

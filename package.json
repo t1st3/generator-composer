@@ -1,6 +1,6 @@
 {
   "name": "generator-composer",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "description": "A generator for Yeoman that provides a boilerplate for a PHP Composer project",
   "keywords": [
     "yeoman-generator",
@@ -9,7 +9,9 @@
 		"phpdoc",
 		"phpunit",
 		"phplint",
-		"phpcpd"
+		"phpcpd",
+		"travis",
+		"packagist"
   ],
   "homepage": "https://github.com/T1st3/generator-composer",
   "bugs": "https://github.com/T1st3/generator-composer/issues",

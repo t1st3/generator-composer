@@ -17,13 +17,13 @@ require(dirname(dirname(dirname(dirname(__FILE__)))) . '/vendor/autoload.php');
 class <%= objectName %> {
 
 	/**
-	 * @property number $myParam This is my parameter
+	 * @property int $myParam This is my parameter
 	 */
 	public $myParam = 0;
 
 	/**
 	 * @name increase
-	 * @param number $n The number to add to $myParam
+	 * @param int $n The number to add to $myParam
 	 * @since 0.1.0
 	 */
 	public function increase ( $n ) {
