@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 				}
 			},
 			phpdoc: {
-				command: 'vendor/bin/phpdoc.php -d src/ -t doc',
+				command: 'vendor/bin/phpdoc.php -d src/<%= githubAccount %>/<%= objectName %>/ -t doc',
 				options: {
 					stdout: true
 				}
@@ -58,8 +58,8 @@ module.exports = function(grunt) {
 				spawnLimit: 10,
 				swapPath: "_lint/tmp"
 			},
-			good: ["src/*.php"],
-			bad: ["src/*.php"]
+			good: ["src/<%= githubAccount %>/<%= objectName %>/*.php"],
+			bad: ["src/<%= githubAccount %>/<%= objectName %>/*.php"]
     }
   });
 

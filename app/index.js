@@ -25,15 +25,19 @@ AmdGenerator.prototype.askFor = function askFor() {
 	var prompts = [
 		{
 			name: 'githubAccount',
-			message: 'What is your github account?'
+			message: 'What is your github account (e.g. myGitAccount)?'
 		},
 		{
 			name: 'projectName',
-			message: 'What is the name of your PHP project (the slug-name of the Github repository)?'
+			message: 'What is the name of your PHP project (the slug-name of the Github repository, e.g. php-my-super-package)?'
 		},
 		{
 			name: 'projectVersion',
-			message: 'What is the version of your PHP project?'
+			message: 'What is the version of your PHP project (e.g. 0.1.0)?'
+		},
+		{
+			name: 'objectName',
+			message: 'What is the name of your main PHP class (e.g. mySuperPackage)?'
 		}
 	];
 
@@ -49,11 +53,11 @@ AmdGenerator.prototype.app = function app() {
 
 	this.mkdir('src');
 	this.mkdir('src/' + this.githubAccount);
-	this.mkdir('src/' + this.githubAccount + '/' + this.projectName);
-	this.template('src/_script.php', 'src/' + this.githubAccount + '/' + this.projectName + '/' + this.projectName + '.php');
+	this.mkdir('src/' + this.githubAccount + '/' + this.objectName);
+	this.template('src/_script.php', 'src/' + this.githubAccount + '/' + this.objectName + '/' + this.objectName + '.php');
 	
 	this.mkdir('tests');
-	this.template('tests/_scriptTest.php', 'tests/' + this.projectName + 'Test.php');
+	this.template('tests/_scriptTest.php', 'tests/' + this.objectName + 'Test.php');
 
 	this.mkdir('example');
 	

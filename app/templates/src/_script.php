@@ -7,14 +7,14 @@
  * 
  */
 
-namespace <%= githubAccount %>\<%= projectName %>;
+namespace <%= githubAccount %>\<%= objectName %>;
 
 require(dirname(dirname(__FILE__)) . '/vendor/autoload.php');
 
 /**
- * @package <%= projectName %>
+ * @package <%= objectName %>
  */
-class <%= projectName %> {
+class <%= objectName %> {
 
 	/**
 	 * @property number $myParam This is my parameter
