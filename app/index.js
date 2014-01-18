@@ -72,6 +72,7 @@ ComposerGenerator.prototype.app = function app() {
 	this.template('_composer.json', 'composer.json');
 	this.template('_README.md', 'README.md');
 	this.copy('gitignore', '.gitignore');
+	this.copy('gitattributes', '.gitattributes');
 	this.copy('travis.yml', '.travis.yml');
 	this.template('_travis-ci.xml', 'travis-ci.xml');
 	this.template('_phpunit.xml', 'phpunit.xml');
