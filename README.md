@@ -103,6 +103,7 @@ Then, you can install PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
 
 ```
 php composer.phar install -v
+php composer.phar require -v --dev "phpunit/phpunit:3.*"
 ```
 
 
