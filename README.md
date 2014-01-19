@@ -69,8 +69,7 @@ Yeoman will ask you 4 questions:
 
 1. your github account (e.g. gitAccount)
 2. the name of the repository on Github (e.g. php-my-super-package)
-3. the version of the project (e.g. 0.1.0)
-4. the name of the main PHP class of your project (e.g. mySuperPackage)
+3. the name of the main PHP class of your project (e.g. mySuperPackage)
 
 
 
