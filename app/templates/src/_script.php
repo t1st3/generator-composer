@@ -9,9 +9,9 @@
  * @copyright Copyright (c) 2014, <%= githubAccount %> 
  */
 
-require(dirname(dirname(dirname(dirname(__FILE__)))) . '/vendor/autoload.php');
-
 namespace <%= githubAccount %>\<%= objectName %>;
+
+require(dirname(dirname(dirname(dirname(__FILE__)))) . '/vendor/autoload.php');
 
 /**
  * The <%= objectName %> class
