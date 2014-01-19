@@ -93,12 +93,17 @@ To install Grunt globally on the command line (and run the above build task), ru
 npm install -g grunt-cli
 ```
 
-Then, with Grunt, you can install Composer, PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
+Then, with Grunt, you can install Composer locally. Just run once:
 
 ```
 grunt init
 ```
 
+Then, you can install PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
+
+```
+composer install
+```
 
 
 Build the sources of your generated PHP project

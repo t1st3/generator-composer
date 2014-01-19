@@ -8,24 +8,6 @@ module.exports = function(grunt) {
 					stdout: true
 				}
 			},
-			installPhpdoc: {
-				command: 'php composer.phar require "phpdocumentor/phpdocumentor:2.*"',
-				options: {
-					stdout: true
-				}
-			},
-			installPhpUnit: {
-				command: 'php composer.phar require "phpunit/phpunit:3.*"',
-				options: {
-					stdout: true
-				}
-			},
-			installCopyPasteDetector: {
-				command: 'php composer.phar require "sebastian/phpcpd:2.*"',
-				options: {
-					stdout: true
-				}
-			},
 			phpdoc: {
 				command: 'vendor/bin/phpdoc.php -d src/<%= githubAccount %>/<%= objectName %>/ -t doc',
 				options: {
@@ -86,10 +68,7 @@ module.exports = function(grunt) {
 
 	// Register tasks
 	grunt.registerTask('init', [
-		'shell:installComposer',
-		'shell:installPhpdoc',
-		'shell:installPhpUnit',
-		'shell:installCopyPasteDetector'
+		'shell:installComposer'
 	]);
 	
 	grunt.registerTask('build', [
