@@ -25,6 +25,7 @@ The proposed Grunt build for the generated Composer project has the following ta
 * [PHPUnit](http://phpunit.de/) to run tests
 * automatic creation of a [PhpDocumentor](http://phpdoc.org) documentation
 * Usage of [Php Copy/Paste Detector](https://github.com/sebastianbergmann/phpcpd)
+* Automatic versioning of all the project when version is modified in package.json
 
 The generated PHP project does not rely on any other PHP dependency than Composer and Packagist-installed packages (e.g. no PEAR dependency).
 

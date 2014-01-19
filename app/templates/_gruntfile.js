@@ -61,13 +61,28 @@ module.exports = function(grunt) {
 			},
 			good: ["src/<%= githubAccount %>/<%= objectName %>/*.php"],
 			bad: ["src/<%= githubAccount %>/<%= objectName %>/*.php"]
-    }
+    },
+		version: {
+			php: {
+				options: {
+					prefix: '@version\\s*'
+				},
+				src: ['src/**/*.php']
+			},
+			json: {
+				options: {
+					prefix: '"version":\\s"*'
+				},
+				src: ['composer.json']
+			}
+		}
   });
 
 	// Load tasks
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-phpunit');
 	grunt.loadNpmTasks('grunt-phplint');
+	grunt.loadNpmTasks("grunt-version");
 
 	// Register tasks
 	grunt.registerTask('init', [
@@ -81,7 +96,10 @@ module.exports = function(grunt) {
 		'phplint:good',
 		'phpunit',
 		'shell:phpdoc',
-		'shell:phpcpd'
+		'shell:phpcpd',
+		'version:php',
+		'version:json'
+		
 	]);
 	
 	grunt.registerTask('serve', [

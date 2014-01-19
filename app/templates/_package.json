@@ -15,6 +15,7 @@
 		"grunt": "~0.4.2",
     "grunt-shell": "~0.6.1",
 		"grunt-phplint": "~0.0.5",
-		"grunt-phpunit": "~0.3.2"
+		"grunt-phpunit": "~0.3.2",
+		"grunt-version": "~0.3.0"
 	}
 }
