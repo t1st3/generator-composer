@@ -102,7 +102,7 @@ grunt init
 Then, you can install PhpDocumentor, PhpUnit and PhpCPD locally. Just run once:
 
 ```
-composer install
+php composer.phar install -v
 ```
 
 
