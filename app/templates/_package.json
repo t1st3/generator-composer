@@ -1,6 +1,6 @@
 {
 	"name": "<%= projectName %>",
-	"version": "<%= projectVersion %>",
+	"version": "0.1.0",
 	"author": "<%= githubAccount %>",
 	"homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
 	"bugs": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",

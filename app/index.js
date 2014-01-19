@@ -32,10 +32,6 @@ ComposerGenerator.prototype.askFor = function askFor() {
 			message: 'What is the name of your PHP project (the slug-name of the Github repository, e.g. php-my-super-package)?'
 		},
 		{
-			name: 'projectVersion',
-			message: 'What is the version of your PHP project (e.g. 0.1.0)?'
-		},
-		{
 			name: 'objectName',
 			message: 'What is the name of your main PHP class (e.g. mySuperPackage)?'
 		}
@@ -44,7 +40,6 @@ ComposerGenerator.prototype.askFor = function askFor() {
 	this.prompt(prompts, function (props) {
 		this.githubAccount = props.githubAccount;
 		this.projectName = props.projectName;
-		this.projectVersion = props.projectVersion;
 		this.objectName = props.objectName;
 		cb();
 	}.bind(this));

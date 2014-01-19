@@ -2,7 +2,7 @@
 /**
  * <%= projectName %>
  * @package <%= objectName %>
- * @version <%= projectVersion %>
+ * @version 0.1.0
  * @link https://github.com/<%= githubAccount %>/<%= projectName %>
  * @author <%= githubAccount %> <https://github.com/<%= githubAccount %>>
  * @license https://github.com/<%= githubAccount %>/<%= projectName %>/blob/master/LICENSE
