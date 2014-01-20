@@ -72,12 +72,12 @@ module.exports = function(grunt) {
 	]);
 	
 	grunt.registerTask('build', [
+		'version:php',
+		'version:json',
 		'phplint:good',
 		'phpunit',
 		'shell:phpdoc',
-		'shell:phpcpd',
-		'version:php',
-		'version:json'
+		'shell:phpcpd'
 		
 	]);
 	
