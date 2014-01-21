@@ -105,6 +105,8 @@ php composer.phar install -v
 php composer.phar require -v --dev "phpunit/phpunit:3.*"
 ```
 
+Finally, you should also install the PHP extension named Xdebug, which will be used by PhpUnit for code coverage.
+
 
 Build the sources of your generated PHP project
 -----------
