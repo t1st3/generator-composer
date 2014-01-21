@@ -1,5 +1,12 @@
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+	
+	require('load-grunt-tasks')(grunt, {
+		scope: 'devDependencies',
+		config: 'package.json',
+		pattern: ['grunt-*']
+	});
+	
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
     shell: {
@@ -35,15 +42,15 @@ module.exports = function(grunt) {
 		},
 		phplint: {
 			options: {
-				phpCmd: "/usr/bin/php", // Or "c:\EasyPHP-5.3.8.1\PHP.exe"
+				phpCmd: '/usr/bin/php', // Or 'c:\EasyPHP-5.3.8.1\PHP.exe'
 				phpArgs: {
-					"-l": null
+					'-l': null
 				},
 				spawnLimit: 10,
-				swapPath: "_lint/tmp"
+				swapPath: '_lint/tmp'
 			},
-			good: ["src/<%= githubAccount %>/<%= objectName %>/*.php"],
-			bad: ["src/<%= githubAccount %>/<%= objectName %>/*.php"]
+			good: ['src/<%= githubAccount %>/<%= objectName %>/*.php'],
+			bad: ['src/<%= githubAccount %>/<%= objectName %>/*.php']
     },
 		version: {
 			php: {
@@ -60,12 +67,6 @@ module.exports = function(grunt) {
 			}
 		}
   });
-
-	// Load tasks
-	grunt.loadNpmTasks('grunt-shell');
-	grunt.loadNpmTasks('grunt-phpunit');
-	grunt.loadNpmTasks('grunt-phplint');
-	grunt.loadNpmTasks("grunt-version");
 
 	// Register tasks
 	grunt.registerTask('init', [
