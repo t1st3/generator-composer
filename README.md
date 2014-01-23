@@ -2,7 +2,7 @@ generator-composer
 ==================
 
 [![NPM version](https://badge.fury.io/js/generator-composer.png)](http://badge.fury.io/js/generator-composer)
-[![Dependencies](https://david-dm.org/t1st3/generator-composer.png)](https://david-dm.org/t1st3/generator-composer)
+[![Dependency Status](https://david-dm.org/t1st3/generator-composer.png?theme=shields.io)](https://david-dm.org/t1st3/generator-composer)
 [![Build Status](https://travis-ci.org/T1st3/generator-composer.png?branch=master)](https://travis-ci.org/T1st3/generator-composer)
 
 
@@ -108,6 +108,8 @@ php composer.phar require -v --dev "phpunit/phpunit:3.*"
 Finally, you should also install the PHP extension named Xdebug, which will be used by PhpUnit for code coverage.
 
 
+
+
 Build the sources of your generated PHP project
 -----------
 
@@ -133,6 +135,9 @@ The generated PHP is ready-to-publish on Packagist. Just login on Packagist with
 
 
 
+
+
+
 Credits
 -----------
 
@@ -149,3 +154,12 @@ License
 -----------
 
 This generator is released under the [MIT License](https://github.com/T1st3/generator-composer/blob/master/LICENSE).
+
+
+
+More
+-----------
+
+[![Total views](https://sourcegraph.com/api/repos/github.com/T1st3/generator-composer/counters/views.png)](https://sourcegraph.com/github.com/T1st3/generator-composer)
+
+
