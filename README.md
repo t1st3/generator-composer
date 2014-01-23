@@ -16,7 +16,7 @@ It provides a basic boilerplate for a [Composer](http://getcomposer.org) project
 * automatic creation of [PhpDoc](http://phpdoc.org) documentation on build
 * a functional example
 * buildable with [Grunt](http://gruntjs.com)
-* Ready for [Github](https://github.com) and [Travis-CI](https://travis-ci.org/)
+* Ready for [Github](https://github.com), [Travis-CI](https://travis-ci.org/) and [Packagist](https://packagist.org/)
 
 
 The proposed Grunt build for the generated Composer project has the following tasks:
@@ -49,11 +49,13 @@ npm install -g generator-composer
 
 You may also just install it locally:
 
-[![NPM](https://nodei.co/npm/generator-composer.png?compact=true)](https://nodei.co/npm/generator-composer/)
 
 ```
 npm install generator-composer
 ```
+
+[![NPM](https://nodei.co/npm/generator-composer.png?compact=true)](https://nodei.co/npm/generator-composer/)
+
 
 
 Usage of the generator
@@ -131,10 +133,22 @@ The build process will run the following tasks:
 Publish your generated project on Packagist
 --------------
 
-The generated PHP is ready-to-publish on Packagist. Just login on Packagist with Github, add the Packagist hooks to your Github account, and activate your package on Packagist.
+The generated PHP is ready-to-publish on [Packagist](https://packagist.org/). Just login on Packagist with Github, add the Packagist hooks to your Github account, and activate your package on Packagist.
 
 
 
+Todos
+----------
+
+- Create a Grunt build process (for the generator itself), which includes:
+  - testing
+  - jshint
+  - jscs
+- More tests for the generator
+- Tests for the generated project (in the build process)
+- Try to get a livereload process (maybe with grunt-php)
+- More comments the code
+- Include a changelog generator in the build process of the generated code
 
 
 
