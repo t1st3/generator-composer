@@ -26,7 +26,6 @@
     "url": "git://github.com/t1st3/generator-composer.git"
   },
   "scripts": {
-    "test": "grunt",
 		"test": "mocha"
   },
   "dependencies": {
