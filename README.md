@@ -137,18 +137,37 @@ The generated PHP is ready-to-publish on [Packagist](https://packagist.org/). Ju
 
 
 
+Build the generator from its sources
+-----------
+
+The generator itself can be built from its sources. At the moment, the build process only includes syntax checks with [JSHint](http://jshint.com) and [JSCS](https://npmjs.org/package/jscs).
+
+In order to build the generator from its source, you will need Grunt. To install Grunt globally on the command line (and run the above build task), run:
+
+```
+npm install -g grunt-cli
+```
+
+Just run the `grunt task` in the folder where your generator is installed:
+
+```
+grunt
+```
+
+[![devDependency Status](https://david-dm.org/t1st3/generator-composer/dev-status.png?theme=shields.io)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+
+
+
+
 Todos
 ----------
 
-- Create a Grunt build process (for the generator itself), which includes:
-  - testing
-  - jshint
-  - jscs
-- More tests for the generator
-- Tests for the generated project (in the build process)
-- Try to get a livereload process (maybe with grunt-php)
-- More comments the code
+- Try to get a livereload process for the generated project (maybe with grunt-php)
+- More comments in the code
 - Include a changelog generator in the build process of the generated code
+- Include a changelog generator in the build process of generator
 
 
 

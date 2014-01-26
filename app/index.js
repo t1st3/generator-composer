@@ -3,8 +3,7 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 
-
-var ComposerGenerator = module.exports = function ComposerGenerator(args, options, config) {
+var ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
 	yeoman.generators.Base.apply(this, arguments);
 
 	this.on('end', function () {
