@@ -26,7 +26,8 @@
     "url": "git://github.com/t1st3/generator-composer.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "grunt",
+		"test": "mocha"
   },
   "dependencies": {
     "yeoman-generator": "~0.16.0"
