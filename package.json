@@ -4,14 +4,14 @@
   "description": "A generator for Yeoman that provides a boilerplate for a PHP Composer project",
   "keywords": [
     "yeoman-generator",
-		"php",
-		"composer",
-		"phpdoc",
-		"phpunit",
-		"phplint",
-		"phpcpd",
-		"travis",
-		"packagist"
+    "php",
+    "composer",
+    "phpdoc",
+    "phpunit",
+    "phplint",
+    "phpcpd",
+    "travis",
+    "packagist"
   ],
   "homepage": "https://github.com/T1st3/generator-composer",
   "bugs": "https://github.com/T1st3/generator-composer/issues",
@@ -37,7 +37,8 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jscs-checker": "~0.3.2",
     "load-grunt-tasks": "~0.3.0",
-    "time-grunt": "~0.2.8"
+    "time-grunt": "~0.2.8",
+    "jshint-stylish": "~0.1.5"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
