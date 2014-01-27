@@ -1,6 +1,6 @@
 {
   "name": "generator-composer",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A generator for Yeoman that provides a boilerplate for a PHP Composer project",
   "keywords": [
     "yeoman-generator",
@@ -26,10 +26,11 @@
     "url": "git://github.com/t1st3/generator-composer.git"
   },
   "scripts": {
-		"test": "mocha"
+    "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.16.0"
+    "yeoman-generator": "~0.16.0",
+    "figlet": "~1.0.8"
   },
   "devDependencies": {
     "mocha": "~1.17.1",

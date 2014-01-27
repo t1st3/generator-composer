@@ -2,6 +2,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var figlet = require('figlet');
 
 var ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
 	yeoman.generators.Base.apply(this, arguments);
@@ -18,30 +19,39 @@ util.inherits(ComposerGenerator, yeoman.generators.Base);
 ComposerGenerator.prototype.askFor = function askFor() {
 	var cb = this.async();
 
-	// have Yeoman greet the user.
-	console.log(this.yeoman);
+	var t = this;
+	figlet('yo composer', function (err, data) {
+		if (err) {
+			console.log('Something went wrong with figlet');
+			console.dir(err);
+			return;
+		} else {
+			console.log(data);
+			console.log(t.yeoman);
 
-	var prompts = [
-		{
-			name: 'githubAccount',
-			message: 'What is your github account (e.g. myGitAccount)?'
-		},
-		{
-			name: 'projectName',
-			message: 'What is the name of your PHP project (the slug-name of the Github repository, e.g. php-my-super-package)?'
-		},
-		{
-			name: 'objectName',
-			message: 'What is the name of your main PHP class (e.g. mySuperPackage)?'
+			var prompts = [
+				{
+					name: 'githubAccount',
+					message: 'What is your github account (e.g. myGitAccount)?'
+				},
+				{
+					name: 'projectName',
+					message: 'What is the name of your PHP project (the slug-name of the Github repository, e.g. php-my-super-package)?'
+				},
+				{
+					name: 'objectName',
+					message: 'What is the name of your main PHP class (e.g. mySuperPackage)?'
+				}
+			];
+
+			t.prompt(prompts, function (props) {
+				t.githubAccount = props.githubAccount;
+				t.projectName = props.projectName;
+				t.objectName = props.objectName;
+				cb();
+			}.bind(t));
 		}
-	];
-
-	this.prompt(prompts, function (props) {
-		this.githubAccount = props.githubAccount;
-		this.projectName = props.projectName;
-		this.objectName = props.objectName;
-		cb();
-	}.bind(this));
+	});
 };
 
 ComposerGenerator.prototype.app = function app() {
