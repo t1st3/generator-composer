@@ -18,7 +18,7 @@ util.inherits(ComposerGenerator, yeoman.generators.Base);
 
 ComposerGenerator.prototype.askFor = function askFor() {
 	var cb = this.async();
-
+	
 	var t = this;
 	figlet('yo composer', function (err, data) {
 		if (err) {
@@ -27,6 +27,16 @@ ComposerGenerator.prototype.askFor = function askFor() {
 			return;
 		} else {
 			console.log(data);
+			var updateNotifier = require('update-notifier');
+			var notifier = updateNotifier(
+				{
+					packagePath: '../package.json',
+					packageName: 'generator-composer'
+				}
+			);
+			if (notifier.update) {
+				notifier.notify();
+			}
 			console.log(t.yeoman);
 
 			var prompts = [
