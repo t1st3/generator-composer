@@ -196,3 +196,7 @@ More
 [![Total views](https://sourcegraph.com/api/repos/github.com/T1st3/generator-composer/counters/views.png)](https://sourcegraph.com/github.com/T1st3/generator-composer)
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/T1st3/generator-composer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
