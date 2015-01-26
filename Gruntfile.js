@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     config: 'package.json',
     pattern: ['grunt-*']
   });
-  
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: {
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
       }
     }
   });
-  
+
   grunt.registerTask('default', [
     'jshint',
     'jscs'
