@@ -31,10 +31,10 @@ ComposerGenerator.prototype.askFor = function askFor() {
       console.log(data);
       var prompts,
       updateNotifier = require('update-notifier'),
+      pkg = require('../package.json'),
       notifier = updateNotifier(
         {
-          packagePath: '../package.json',
-          packageName: 'generator-composer'
+          pkg: pkg
         }
       );
       if (notifier.update) {
