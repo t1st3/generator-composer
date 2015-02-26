@@ -1,42 +1,35 @@
-/*global describe, beforeEach, it*/
 'use strict';
 
-var path    = require('path');
+var path = require('path');
+var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
+var os = require('os');
 
+describe('composer:app', function () {
+  before(function (done) {
+    helpers.run(path.join(__dirname, '../app'))
+      .inDir(path.join(os.tmpdir(), './temp-test'))
+      .withOptions({ 'skip-install': true })
+      .withPrompt({
+        ProjectName: 'php-my-super-package',
+        githubAccount: 'myGitAccount',
+        objectName: 'mySuperPackage'
+      })
+      .on('end', done);
+  });
 
-describe('test generator', function () {
-		beforeEach(function (done) {
-				helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
-						if (err) {
-								return done(err);
-						}
-
-						this.app = helpers.createGenerator('composer:app', [
-								'../../app'
-						]);
-						done();
-				}.bind(this));
-		});
-
-		it('creates expected files', function (done) {
-				var expected = [
-						// add files you expect to exist here.
-						'.editorconfig',
-						'.gitignore',
-						'Gruntfile.js',
-						'composer.json',
-						'package.json',
-						'.travis.yml'
-				];
-
-				helpers.mockPrompt(this.app, {
-						'someOption': true
-				});
-				this.app.options['skip-install'] = true;
-				this.app.run({}, function () {
-						helpers.assertFiles(expected);
-						done();
-				});
-		});
+  it('creates files', function () {
+    assert.file([
+      'composer.json',
+      'README.md',
+      'package.json',
+      '.editorconfig',
+      '.gitattributes',
+      '.gitignore',
+      'Gruntfile.js',
+      'phpunit.xml',
+      'travis-ci.xml',
+      '.travis.yml'
+    ]);
+  });
 });
