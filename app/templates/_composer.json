@@ -1,31 +1,31 @@
 {
-	"name": "<%= githubAccount %>/<%= projectName %>",
-	"version": "0.1.0",
-	"homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
-	"description": "",
-	"keywords": [
-		"php"
-	],
-	"authors": [
-		{
-			"name": "<%= githubAccount %>",
-			"homepage": "https://github.com/<%= githubAccount %>",
-			"role": "Developer"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
-		"source": "https://github.com/<%= githubAccount %>/<%= projectName %>"
-	},
-	"license": "MIT",
-	"type": "library",
-	"require": {
-		"php": ">=5.3.0",
-		"monolog/monolog": "1.*"
-	},
-	"require-dev": {
-		"phpdocumentor/phpdocumentor": "2.*",
-		"phpunit/phpunit": "3.*",
-		"sebastian/phpcpd": "2.*"
-	}
+  "name": "<%= githubAccount %>/<%= projectName %>",
+  "version": "0.1.0",
+  "homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
+  "description": "",
+  "keywords": [
+    "php"
+  ],
+  "authors": [
+    {
+      "name": "<%= githubAccount %>",
+      "homepage": "https://github.com/<%= githubAccount %>",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
+    "source": "https://github.com/<%= githubAccount %>/<%= projectName %>"
+  },
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=5.3.0",
+    "monolog/monolog": "1.*"
+  },
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "2.*",
+    "phpunit/phpunit": "3.*",
+    "sebastian/phpcpd": "2.*"
+  }
 }

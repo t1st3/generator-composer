@@ -1,23 +1,23 @@
 {
-	"name": "<%= projectName %>",
-	"version": "0.1.0",
-	"author": "<%= githubAccount %>",
-	"homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
-	"bugs": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/<%= githubAccount %>/<%= projectName %>.git"
-	},
-	"engines": {
-		"node": ">= 0.10.0"
-	},
-	"devDependencies": {
-		"grunt": "~0.4.2",
+  "name": "<%= projectName %>",
+  "version": "0.1.0",
+  "author": "<%= githubAccount %>",
+  "homepage": "https://github.com/<%= githubAccount %>/<%= projectName %>",
+  "bugs": "https://github.com/<%= githubAccount %>/<%= projectName %>/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= githubAccount %>/<%= projectName %>.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
     "grunt-shell": "~0.6.1",
-		"grunt-phplint": "~0.0.5",
-		"grunt-phpunit": "~0.3.2",
-		"grunt-version": "~0.3.0",
-		"load-grunt-tasks": "~0.2.1",
-		"time-grunt": "~0.2.8"
-	}
+    "grunt-phplint": "~0.0.5",
+    "grunt-phpunit": "~0.3.2",
+    "grunt-version": "~0.3.0",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.2.8"
+  }
 }
