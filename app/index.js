@@ -13,7 +13,7 @@ ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
 
-  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
+  this.pkg = require("../package.json");
 };
 
 util.inherits(ComposerGenerator, yeoman.generators.Base);
@@ -31,16 +31,18 @@ ComposerGenerator.prototype.askFor = function askFor() {
       console.log(data);
       var prompts,
       updateNotifier = require('update-notifier'),
-      pkg = require('../package.json'),
       notifier = updateNotifier(
         {
-          pkg: pkg
+          pkg: t.pkg
         }
       );
       if (notifier.update) {
         notifier.notify();
       }
-      console.log(t.yeoman);
+
+      if (t.yeoman) {
+        console.log(t.yeoman);
+      }
 
       prompts = [
         {
