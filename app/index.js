@@ -1,9 +1,9 @@
 'use strict';
 
 var util = require('util'),
-path = require('path'),
-yeoman = require('yeoman-generator'),
-figlet = require('figlet'),
+    yeoman = require('yeoman-generator'),
+    figlet = require('figlet'),
+
 ComposerGenerator;
 
 ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
@@ -13,7 +13,7 @@ ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
 
-  this.pkg = require("../package.json");
+  this.pkg = require('../package.json');
 };
 
 util.inherits(ComposerGenerator, yeoman.generators.Base);
