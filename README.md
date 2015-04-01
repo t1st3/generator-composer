@@ -65,7 +65,7 @@ Once you have installed Node, NPM, Yeoman and the generator itself, you can init
 yo composer
 ```
 
-Yeoman will ask you 4 questions:
+Yeoman will ask you 3 questions:
 
 1. your github account (e.g. gitAccount)
 2. the name of the repository on Github (e.g. php-my-super-package)

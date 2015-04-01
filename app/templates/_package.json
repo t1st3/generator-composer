@@ -12,12 +12,12 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-shell": "~0.6.1",
-    "grunt-phplint": "~0.0.5",
-    "grunt-phpunit": "~0.3.2",
-    "grunt-version": "~0.3.0",
-    "load-grunt-tasks": "~0.2.1",
-    "time-grunt": "~0.2.8"
+    "grunt": "~0.4",
+    "grunt-shell": "~0.7",
+    "grunt-phplint": "~0.0",
+    "grunt-phpunit": "~0.3",
+    "grunt-version": "~1.0",
+    "load-grunt-tasks": "~3.1",
+    "time-grunt": "~1.1"
   }
 }
