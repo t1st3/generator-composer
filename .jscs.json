@@ -47,9 +47,5 @@
   "disallowSpaceBeforeBinaryOperators": [ ",", ":" ],
   "disallowMultipleLineBreaks": true,
   "disallowImplicitTypeConversion": ["string"],
-  "excludeFiles": ["test/data/*.js"],
-  "validateJSDoc": {
-    "checkParamNames": true,
-    "requireParamTypes": true
-  }
+  "excludeFiles": ["test/data/*.js"]
 }
