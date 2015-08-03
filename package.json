@@ -1,6 +1,6 @@
 {
   "name": "generator-composer",
-  "version": "0.13.3",
+  "version": "0.13.4",
   "description": "A generator for Yeoman that provides a boilerplate for a PHP Composer project",
   "keywords": [
     "yeoman-generator",
