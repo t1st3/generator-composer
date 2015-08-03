@@ -1,16 +1,17 @@
 'use strict';
 
-var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
-var os = require('os');
+var path = require('path'),
+assert = require('yeoman-generator').assert,
+helpers = require('yeoman-generator').test;
 
-describe('composer:app', function () {
+describe('yo composer:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../app'))
-      .inDir(path.join(os.tmpdir(), './temp-test'))
-      .withOptions({ 'skip-install': true })
-      .withPrompt({
+      .inDir(path.join(__dirname, '../../tmp'))
+      .withOptions({
+        'skip-install': true
+      })
+      .withPrompts({
         ProjectName: 'php-my-super-package',
         githubAccount: 'myGitAccount',
         objectName: 'mySuperPackage'
