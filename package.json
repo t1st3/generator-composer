@@ -29,17 +29,17 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.20",
+    "yeoman-generator": "~0.21",
     "figlet": "~1.1",
-    "update-notifier": "~0.5"
+    "update-notifier": "~0.6"
   },
   "devDependencies": {
     "grunt": "~0.4",
     "grunt-contrib-jshint": "~0.11",
-    "grunt-jscs": "~2.1",
-    "jshint-stylish": "~2.0",
-    "load-grunt-tasks": "~3.2",
-    "mocha": "~2.2",
+    "grunt-jscs": "~2.5",
+    "jshint-stylish": "~2.1",
+    "load-grunt-tasks": "~3.3",
+    "mocha": "~2.3",
     "time-grunt": "~1.2"
   },
   "peerDependencies": {
