@@ -29,7 +29,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "yeoman-generator": "~0.21",
+    "yeoman-generator": "~0.22.1",
     "figlet": "~1.1",
     "update-notifier": "~0.6"
   },
