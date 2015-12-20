@@ -188,11 +188,3 @@ This generator is released under the [MIT License](https://github.com/T1st3/gene
 
 
 
-More
------------
-
-[![Total views](https://sourcegraph.com/api/repos/github.com/T1st3/generator-composer/counters/views.png)](https://sourcegraph.com/github.com/T1st3/generator-composer)
-
-
-
-
