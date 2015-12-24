@@ -3,6 +3,7 @@ generator-composer
 
 [![NPM version](https://img.shields.io/npm/v/generator-composer.svg)](https://www.npmjs.com/package/generator-composer)
 [![Dependency Status](https://img.shields.io/david/T1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer)
+[![devDependency Status](https://david-dm.org/t1st3/generator-composer/dev-status.svg)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/T1st3/generator-composer.svg)](https://travis-ci.org/T1st3/generator-composer)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/t1st3/generator-composer.svg)](http://isitmaintained.com/project/t1st3/generator-composer "Percentage of issues still open")
 
