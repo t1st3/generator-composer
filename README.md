@@ -174,7 +174,6 @@ Credits
 -----------
 
 * [Yeoman](http://yeoman.io)
-* [Bower](http://bower.io)
 * [Grunt](http://gruntjs.com)
 * [Composer](http://getcomposer.org)
 
