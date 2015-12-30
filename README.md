@@ -185,6 +185,3 @@ License
 -----------
 
 This generator is released under the [MIT License](https://github.com/T1st3/generator-composer/blob/master/LICENSE).
-
-
-
