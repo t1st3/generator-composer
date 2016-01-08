@@ -166,7 +166,6 @@ Todos
 - Try to get a livereload process for the generated project (maybe with grunt-php)
 - More comments in the code
 - Include a changelog generator in the build process of the generated code
-- Include a changelog generator in the build process of generator
 
 
 
