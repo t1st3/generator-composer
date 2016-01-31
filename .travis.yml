@@ -18,4 +18,4 @@ deploy:
     secure: FKrqhNzAOS84hQHwflOzy2Dc+zgArBUoq6E6pWgtP9lMzxqeRYN1QXPbTNxv0BJiIT/vu4R9hNg19TfLwUhcB+k6EaLOlWzcwtD8Ql4FPJbDCseQ2yVAr4M7wg4rj7o3n9QrdSd+nXa36rZNU3NQVFxHfIzL5VrDQOvk/xRl12k=
   on:
     tags: true
-    repo: T1st3/generator-composer
+    repo: t1st3/generator-composer

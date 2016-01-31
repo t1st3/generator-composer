@@ -13,12 +13,12 @@
     "travis",
     "packagist"
   ],
-  "homepage": "https://github.com/T1st3/generator-composer",
-  "bugs": "https://github.com/T1st3/generator-composer/issues",
+  "homepage": "https://github.com/t1st3/generator-composer",
+  "bugs": "https://github.com/t1st3/generator-composer/issues",
   "author": {
-    "name": "T1st3",
+    "name": "t1st3",
     "email": "contact@tiste.org",
-    "url": "https://github.com/T1st3"
+    "url": "https://github.com/t1st3"
   },
   "main": "app/index.js",
   "repository": {

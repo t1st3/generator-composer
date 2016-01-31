@@ -2,9 +2,9 @@ generator-composer
 ==================
 
 [![NPM version](https://img.shields.io/npm/v/generator-composer.svg)](https://www.npmjs.com/package/generator-composer)
-[![Dependency Status](https://img.shields.io/david/T1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer)
+[![Dependency Status](https://img.shields.io/david/t1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer)
 [![devDependency Status](https://david-dm.org/t1st3/generator-composer/dev-status.svg)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
-[![Build Status](https://img.shields.io/travis/T1st3/generator-composer.svg)](https://travis-ci.org/T1st3/generator-composer)
+[![Build Status](https://img.shields.io/travis/t1st3/generator-composer.svg)](https://travis-ci.org/t1st3/generator-composer)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/t1st3/generator-composer.svg)](http://isitmaintained.com/project/t1st3/generator-composer "Percentage of issues still open")
 
 
@@ -153,7 +153,7 @@ Just run the `grunt task` in the folder where your generator is installed:
 grunt
 ```
 
-[![Dev dependencies Status](https://img.shields.io/david/dev/T1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
+[![Dev dependencies Status](https://img.shields.io/david/dev/t1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
@@ -183,4 +183,4 @@ Credits
 License
 -----------
 
-This generator is released under the [MIT License](https://github.com/T1st3/generator-composer/blob/master/LICENSE).
+This generator is released under the [MIT License](https://github.com/t1st3/generator-composer/blob/master/LICENSE).
