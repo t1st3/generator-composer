@@ -8,8 +8,7 @@ node_js:
 before_install:
   - npm install -g grunt-cli
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-composer' ]; then cd .. && eval "mv $currentfolder
-  generator-composer" && cd generator-composer; fi
+  - if [ "$currentfolder" != 'generator-composer' ]; then cd .. && eval "mv $currentfolder generator-composer" && cd generator-composer; fi
 before_script:
   - grunt
 deploy:
