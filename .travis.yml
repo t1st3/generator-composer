@@ -1,17 +1,17 @@
 sudo: false
 language: node_js
 node_js:
-- 0.10
-- 0.12
-- 4
-- 5
+  - 0.10
+  - 0.12
+  - 4
+  - 5
 before_install:
-- npm install -g grunt-cli
-- currentfolder=${PWD##*/}
-- if [ "$currentfolder" != 'generator-composer' ]; then cd .. && eval "mv $currentfolder
+  - npm install -g grunt-cli
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-composer' ]; then cd .. && eval "mv $currentfolder
   generator-composer" && cd generator-composer; fi
 before_script:
-- grunt
+  - grunt
 deploy:
   provider: npm
   email: contact@tiste.org
