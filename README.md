@@ -184,3 +184,5 @@ License
 -----------
 
 This generator is released under the [MIT License](https://github.com/t1st3/generator-composer/blob/master/LICENSE).
+
+[![Analytics](https://ga-beacon.appspot.com/UA-53514029-2/generator-composer/readme?pixel)](https://github.com/igrigorik/ga-beacon)
