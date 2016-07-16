@@ -1,13 +1,13 @@
 'use strict';
 
 var util = require('util'),
-    yeoman = require('yeoman-generator'),
+    base = require('yeoman-generator').Base,
     figlet = require('figlet'),
 
 ComposerGenerator;
 
 ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
-  yeoman.generators.Base.apply(this, arguments);
+  base.apply(this, arguments);
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
@@ -16,7 +16,7 @@ ComposerGenerator = module.exports = function ComposerGenerator(args, options) {
   this.pkg = require('../package.json');
 };
 
-util.inherits(ComposerGenerator, yeoman.generators.Base);
+util.inherits(ComposerGenerator, base);
 
 ComposerGenerator.prototype.askFor = function askFor() {
   var cb = this.async(),
