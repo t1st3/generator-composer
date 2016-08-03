@@ -1,6 +1,7 @@
 {
   "name": "generator-composer",
   "version": "0.14.1",
+  "license": "MIT",
   "description": "A generator for Yeoman that provides a boilerplate for a PHP Composer project",
   "keywords": [
     "yeoman-generator",
@@ -43,6 +44,5 @@
   "engines": {
     "node": ">=0.10.0",
     "npm": ">=1.2.10"
-  },
-  "license": "MIT"
+  }
 }
