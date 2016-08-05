@@ -14,8 +14,6 @@
     "travis",
     "packagist"
   ],
-  "homepage": "https://github.com/t1st3/generator-composer",
-  "bugs": "https://github.com/t1st3/generator-composer/issues",
   "author": {
     "name": "t1st3",
     "email": "contact@tiste.org",
