@@ -1,6 +1,14 @@
 ## Change Log
 
-### 0.15.0 (2016/08/03 12:59 +00:00)
+### 1.0.0 (2016/10/14 14:39 +00:00)
+- [b2e5d16](https://github.com/t1st3/generator-composer/commit/b2e5d162a2626de56c2f6e4a354b01e619514a9f) chore: BREAKING - drop support for Node.js 0.10 and 0.12 (@t1st3)
+- [5abbe0a](https://github.com/t1st3/generator-composer/commit/5abbe0a0c774b434b0e2b3ca058a482a5d1c10cd) chore: set unicorn version for xo (@t1st3)
+- [61b9e56](https://github.com/t1st3/generator-composer/commit/61b9e562411e652d84b940b3208a67b593ef7968) docs(readme): fix license url (@t1st3)
+- [b5f318d](https://github.com/t1st3/generator-composer/commit/b5f318d423bdba8521d19a46e8d3216f8f1776ed) chore(package): remove moot sections (@t1st3)
+- [fb6b6ba](https://github.com/t1st3/generator-composer/commit/fb6b6ba96399dd0b4a018b604da79697c7a97513) chore: bump deps (@t1st3)
+
+### 0.15.0 (2016/08/03 13:00 +00:00)
+- [540e6ad](https://github.com/t1st3/generator-composer/commit/540e6ad6c027ae642e86cd0d4764c98410189454) chore: v0.15.0 (@t1st3)
 - [32ebe82](https://github.com/t1st3/generator-composer/commit/32ebe82269137bb29aa96ab1c2771f9977fee266) chore: minor tweaks (@t1st3)
 - [afa35f8](https://github.com/t1st3/generator-composer/commit/afa35f8727260bb1bdeb64aff86570c9492ff1d1) chore: replace jshint/jscs with xo/eslint; rm grunt (@t1st3)
 - [146c0b8](https://github.com/t1st3/generator-composer/commit/146c0b81257d27685e184b2efe013ace6c4feeb3) chore: lowercase files (@t1st3)
