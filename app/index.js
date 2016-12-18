@@ -5,9 +5,10 @@ var figlet = require('figlet');
 var updateNotifier = require('update-notifier');
 var pkg = require('../package.json');
 
-module.exports = generators.Base.extend({
-	constructor: function () {
-		generators.Base.apply(this, arguments);
+module.exports = class extends generators {
+	constructor(args, opts) {
+		super(args, opts);
+		this.res = {};
 		var done = this.async();
 		var notifier = updateNotifier({
 			pkg: pkg
@@ -24,8 +25,8 @@ module.exports = generators.Base.extend({
 				done();
 			}
 		});
-	},
-	prompting: function () {
+	}
+	prompting() {
 		return this.prompt([{
 			type: 'input',
 			name: 'githubAccount',
@@ -42,44 +43,44 @@ module.exports = generators.Base.extend({
 			this.log('github account', answers.githubAccount);
 			this.log('project name', answers.projectName);
 			this.log('object name', answers.objectName);
-			this.githubAccount = answers.githubAccount;
-			this.projectName = answers.projectName;
-			this.objectName = answers.objectName;
+			this.res.githubAccount = answers.githubAccount;
+			this.res.projectName = answers.projectName;
+			this.res.objectName = answers.objectName;
 		}.bind(this));
-	},
-	writing: function () {
-		this.mkdir('src');
-		this.mkdir('src/' + this.githubAccount);
-		this.mkdir('src/' + this.githubAccount + '/' + this.objectName);
+	}
+	writing() {
+		var self = this;
+		var tpl = function (input, output) {
+			self.fs.copyTpl(
+				self.templatePath(input),
+				self.destinationPath(output),
+				self.res
+			);
+		};
+		var cp = function (input, output) {
+			self.fs.copy(
+				self.templatePath(input),
+				self.destinationPath(output)
+			);
+		};
 
-		this.template(
+		tpl(
 			'src/_script.php',
 			'src/' + this.githubAccount + '/' + this.objectName + '/' + this.objectName + '.php'
 		);
-
-		this.mkdir('tests');
-		this.template('tests/_scriptTest.php', 'tests/' + this.objectName + 'Test.php');
-
-		this.mkdir('example');
-
-		this.mkdir('dist');
-		this.mkdir('doc');
-		this.mkdir('_lint');
-		this.mkdir('_lint/tmp');
-
-		this.template('_gruntfile.js', 'Gruntfile.js');
-		this.template('_package.json', 'package.json');
-		this.template('_composer.json', 'composer.json');
-		this.template('_README.md', 'README.md');
-		this.copy('gitignore', '.gitignore');
-		this.copy('gitattributes', '.gitattributes');
-		this.copy('travis.yml', '.travis.yml');
-		this.template('_travis-ci.xml', 'travis-ci.xml');
-		this.template('_phpunit.xml', 'phpunit.xml');
-
-		this.copy('editorconfig', '.editorconfig');
-	},
-	install: function () {
+		tpl('tests/_scriptTest.php', 'tests/' + this.objectName + 'Test.php');
+		tpl('_gruntfile.js', 'Gruntfile.js');
+		tpl('_package.json', 'package.json');
+		tpl('_composer.json', 'composer.json');
+		tpl('_README.md', 'README.md');
+		cp('gitignore', '.gitignore');
+		cp('gitattributes', '.gitattributes');
+		cp('travis.yml', '.travis.yml');
+		tpl('_travis-ci.xml', 'travis-ci.xml');
+		tpl('_phpunit.xml', 'phpunit.xml');
+		cp('editorconfig', '.editorconfig');
+	}
+	install() {
 		this.installDependencies({skipInstall: this.option('skip-install')});
 	}
-});
+};
