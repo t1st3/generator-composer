@@ -1,6 +1,17 @@
 ## Change Log
 
-### 1.0.0 (2016/10/14 14:39 +00:00)
+### 1.1.0 (2017/04/01 13:31 +00:00)
+- [4de6ff8](https://github.com/t1st3/generator-composer/commit/4de6ff8adb0443017b326dc84627490ccc26938c) feat: es2015ify (@t1st3)
+- [de1bc9a](https://github.com/t1st3/generator-composer/commit/de1bc9aead1630c1270f731b0236182e5cfdd6d1) chore(package): update xo to version 0.19.0 (@greenkeeperio-bot)
+- [#46](https://github.com/t1st3/generator-composer/pull/46) Update yeoman-assert to version 3.0.0 🚀 (@t1st3)
+- [5598173](https://github.com/t1st3/generator-composer/commit/5598173dad6fcd0005bdd34a7a2d5a436c769cd2) chore(package): update yeoman-assert to version 3.0.0 (@greenkeeperio-bot)
+- [#47](https://github.com/t1st3/generator-composer/pull/47) Update update-notifier to version 2.0.0 🚀 (@t1st3)
+- [1ee123c](https://github.com/t1st3/generator-composer/commit/1ee123cc1f24d720920dc9f3d10ba659311837c9) chore(package): update update-notifier to version 2.0.0 (@greenkeeperio-bot)
+- [03fed35](https://github.com/t1st3/generator-composer/commit/03fed35446b2dc2e0e7d0393a7eb5906be00edcf) refactor: compat to yeoman-generator 1.0.0 (@t1st3)
+- [bead6db](https://github.com/t1st3/generator-composer/commit/bead6db9430ac99b35e425bf128497aa63bfc54d) chore(package): update yeoman-generator to version 1.0.0 (@greenkeeperio-bot)
+
+### 1.0.0 (2016/10/14 14:40 +00:00)
+- [0bb3707](https://github.com/t1st3/generator-composer/commit/0bb3707616f5d2817909e2ca930ddb87975fc963) chore: v1.0.0 (@t1st3)
 - [b2e5d16](https://github.com/t1st3/generator-composer/commit/b2e5d162a2626de56c2f6e4a354b01e619514a9f) chore: BREAKING - drop support for Node.js 0.10 and 0.12 (@t1st3)
 - [5abbe0a](https://github.com/t1st3/generator-composer/commit/5abbe0a0c774b434b0e2b3ca058a482a5d1c10cd) chore: set unicorn version for xo (@t1st3)
 - [61b9e56](https://github.com/t1st3/generator-composer/commit/61b9e562411e652d84b940b3208a67b593ef7968) docs(readme): fix license url (@t1st3)
