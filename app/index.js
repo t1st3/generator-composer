@@ -26,6 +26,7 @@ module.exports = class extends generators {
 			}
 		});
 	}
+
 	prompting() {
 		return this.prompt([{
 			type: 'input',
@@ -48,6 +49,7 @@ module.exports = class extends generators {
 			this.res.objectName = answers.objectName;
 		}.bind(this));
 	}
+
 	writing() {
 		const self = this;
 		const tpl = function (input, output) {
@@ -80,6 +82,7 @@ module.exports = class extends generators {
 		tpl('_phpunit.xml', 'phpunit.xml');
 		cp('editorconfig', '.editorconfig');
 	}
+
 	install() {
 		this.installDependencies({skipInstall: this.option('skip-install')});
 	}
