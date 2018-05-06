@@ -1,6 +1,8 @@
 generator-composer
 ==================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/t1st3/generator-composer.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/generator-composer.svg)](https://www.npmjs.com/package/generator-composer)
 [![Dependency Status](https://img.shields.io/david/t1st3/generator-composer.svg)](https://david-dm.org/t1st3/generator-composer)
 [![devDependency Status](https://david-dm.org/t1st3/generator-composer/dev-status.svg)](https://david-dm.org/t1st3/generator-composer#info=devDependencies)
