@@ -40,6 +40,6 @@
     "yeoman-test": "^1.4.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   }
 }
