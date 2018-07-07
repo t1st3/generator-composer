@@ -31,13 +31,13 @@
   "dependencies": {
     "figlet": "^1.1.2",
     "update-notifier": "^2.5.0",
-    "yeoman-generator": "^2.0.5"
+    "yeoman-generator": "^3.0.0"
   },
   "devDependencies": {
-    "mocha": "^5.1.1",
-    "xo": "^0.21.0",
+    "mocha": "^5.2.0",
+    "xo": "^0.21.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.4.0"
+    "yeoman-test": "^1.8.0"
   },
   "engines": {
     "node": ">=6"
