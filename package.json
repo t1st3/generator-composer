@@ -37,7 +37,7 @@
     "mocha": "^5.2.0",
     "xo": "^0.21.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.8.0"
+    "yeoman-test": "^2.0.0"
   },
   "engines": {
     "node": ">=6"
