@@ -28,7 +28,7 @@ module.exports = class extends generators {
 	}
 
 	prompting() {
-		return this.prompt([{
+		const prompts = [{
 			type: 'input',
 			name: 'githubAccount',
 			message: 'What is your github account?'
@@ -40,14 +40,16 @@ module.exports = class extends generators {
 			type: 'input',
 			name: 'objectName',
 			message: 'Name of your main PHP class (e.g. mySuperPackage)?'
-		}]).then(function (answers) { // eslint-disable-line prefer-arrow-callback
+		}];
+
+		return this.prompt(prompts).then(answers => { // eslint-disable-line promise/prefer-await-to-then
 			this.log('github account', answers.githubAccount);
 			this.log('project name', answers.projectName);
 			this.log('object name', answers.objectName);
 			this.res.githubAccount = answers.githubAccount;
 			this.res.projectName = answers.projectName;
 			this.res.objectName = answers.objectName;
-		}.bind(this));
+		});
 	}
 
 	writing() {
