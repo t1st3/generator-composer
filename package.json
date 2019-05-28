@@ -29,12 +29,12 @@
     "test": "mocha"
   },
   "dependencies": {
-    "figlet": "^1.1.2",
+    "figlet": "^1.2.3",
     "update-notifier": "^3.0.0",
     "yeoman-generator": "^4.0.1"
   },
   "devDependencies": {
-    "mocha": "^6.0.0",
+    "mocha": "^6.1.4",
     "xo": "^0.24.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.0.0"
