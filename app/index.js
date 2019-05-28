@@ -59,6 +59,7 @@ module.exports = class extends generators {
 				self.res
 			);
 		};
+
 		const cp = function (input, output) {
 			self.fs.copy(
 				self.templatePath(input),
