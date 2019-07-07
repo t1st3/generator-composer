@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - yeoman-generator > lodash:
+        patched: '2019-07-07T00:10:06.732Z'
+    - yeoman-generator > async > lodash:
+        patched: '2019-07-07T00:10:06.732Z'
+    - yeoman-generator > yeoman-environment > lodash:
+        patched: '2019-07-07T00:10:06.732Z'
+    - yeoman-generator > yeoman-environment > grouped-queue > lodash:
+        patched: '2019-07-07T00:10:06.732Z'
+    - yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2019-07-07T00:10:06.732Z'
